@@ -53,8 +53,7 @@
             <img src="assets/images/single-work.svg" alt="Title" />
             <h2>{{ item.name }}</h2>
             <div *ngIf="item.description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
-              <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
+              <p>{{ item.description }}</p>
             </div>
             <a [href]="item.linkToDownload" class="btn btn-default">Download on {{ item.sourceName }}</a>
           </div>
